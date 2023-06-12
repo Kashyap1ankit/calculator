@@ -11,6 +11,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 .calculator {
   position: absolute;
   top: 10%;
@@ -23,6 +24,30 @@ body {
   border-radius: 15px;
 }
 
+.uppersection {
+  display: flex;
+}
+
+.uppersection .type {
+  text-align: left;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 5%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.088) -3px -3px 6px 1px inset;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.uppersection .type span {
+  font-size: 15px;
+  font-family: "Inconsolata", monospace;
+}
+
+.uppersection .active--type {
+  opacity: 1;
+}
 .calculator input {
   text-align: right;
   padding: 60px 40px 40px 40px;
@@ -73,6 +98,161 @@ body {
   padding: 8px 17px;
 }
 
+/* Currency Converter Section */
+
+.currencyconverter {
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+.currencyconverter #from {
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.currencyconverter #to {
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.currencyconverter .convert {
+  margin: 10% 0px 0px 40%;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: azure;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.currencyconverter .convert:active {
+  transform: scale(1.1);
+}
+
+.currencyconverter .frominput {
+  text-align: right;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.75) 0px 30px 60px -60px,
+    rgba(10, 37, 64, 0.25) 0px -2px 6px 0px inset;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  font-size: 10px;
+}
+
+.currencyconverter .toinput {
+  text-align: right;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.75) 0px 30px 60px -60px,
+    rgba(10, 37, 64, 0.25) 0px -2px 6px 0px inset;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  font-size: 10px;
+}
+
+/* Making the css for next tab */
+
+.calculator2 {
+  position: absolute;
+  top: 8%;
+  left: 30%;
+  background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.uppersection2 {
+  display: flex;
+}
+
+.uppersection2 .type2 {
+  text-align: left;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 5%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.088) -3px -3px 6px 1px inset;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.uppersection2 .type2 span {
+  font-size: 15px;
+  font-family: "Inconsolata", monospace;
+}
+
+.uppersection2 .active--type2 {
+  opacity: 1;
+}
+.calculator2 .input2 {
+  text-align: right;
+  padding: 50px 30px 30px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.908) 0px 30px 60px -60px,
+    rgba(10, 37, 64, 0.25) 0px -2px 6px 0px inset;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+
+.section2 {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+}
+
+.section2 .btn2 {
+  font-size: 17px;
+  font-family: "Tilt Prism", cursive;
+  padding: 10px 15px;
+  margin: 0px 20px 10px 15px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.section2 .opreation2 {
+  background-color: black;
+  color: white;
+}
+
+.section2 .btn2.CE {
+  padding: 8px 10px;
+}
+
+.section2 .btn2.Double02 {
+  padding: 8px 10px;
+}
+
+.section2 .btn2.Dot2 {
+  padding: 8px 17px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* 1.media queries for smaller phone upto 400px */
 
 @media (max-width: 400px) {
@@ -88,7 +268,58 @@ body {
 
   .section .btn {
     font-size: 10px;
+    padding: 10px 15px;
+    margin: 0px 10px 7px 10px;
+  }
 
+  .uppersection .type {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  /* Currency Converter Section */
+
+  .currencyconverter {
+    padding: 10px;
+    margin: 5px 0px;
+  }
+
+  .currencyconverter #from {
+    padding: 2px;
+
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .currencyconverter #to {
+    padding: 2px;
+    margin-right: 20px;
+  }
+
+  .currencyconverter .convert {
+    margin: 5% 0px 0px 30%;
+  }
+
+  /* Making the css for next tab */
+
+  .calculator2 {
+    left: 15%;
+    padding: 10px;
+  }
+
+  .uppersection2 .type2 {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .section2 {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .section2 .btn2 {
+    font-size: 13px;
     padding: 10px 15px;
     margin: 0px 10px 7px 10px;
   }
@@ -110,6 +341,58 @@ body {
   .section .btn {
     font-size: 10px;
 
+    padding: 10px 15px;
+    margin: 0px 10px 7px 10px;
+  }
+
+  .uppersection .type {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  /* Currency Converter Section */
+
+  .currencyconverter {
+    padding: 10px;
+    margin: 5px 0px;
+  }
+
+  .currencyconverter #from {
+    padding: 2px;
+
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .currencyconverter #to {
+    padding: 2px;
+    margin-right: 20px;
+  }
+
+  .currencyconverter .convert {
+    margin: 5% 0px 0px 30%;
+  }
+
+  /* Making the css for next tab */
+
+  .calculator2 {
+    left: 15%;
+    padding: 10px;
+  }
+
+  .uppersection2 .type2 {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .section2 {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .section2 .btn2 {
+    font-size: 13px;
     padding: 10px 15px;
     margin: 0px 10px 7px 10px;
   }
@@ -148,5 +431,57 @@ body {
   }
   .section .btn.Equal {
     padding: 10px 12px;
+  }
+
+  .uppersection .type {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  /* Currency Converter Section */
+
+  .currencyconverter {
+    padding: 10px;
+    margin: 5px 0px;
+  }
+
+  .currencyconverter #from {
+    padding: 2px;
+
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .currencyconverter #to {
+    padding: 2px;
+    margin-right: 20px;
+  }
+
+  .currencyconverter .convert {
+    margin: 5% 0px 0px 30%;
+  }
+
+  /* Making the css for next tab */
+
+  .calculator2 {
+    left: 25%;
+    padding: 10px;
+  }
+
+  .uppersection2 .type2 {
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .section2 {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .section2 .btn2 {
+    font-size: 13px;
+    padding: 10px 15px;
+    margin: 0px 10px 7px 10px;
   }
 }
