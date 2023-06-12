@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="calculator.css" />
   <body>
     <form class="calculator">
+      <!--Upper Type section-->
+      <div class="uppersection">
+        <div class="type standard active--type">
+          <span>Standard </span>
+        </div>
+        <div class="type currency">
+          <span>Currency</span>
+        </div>
+      </div>
+
       <input type="text" />
 
       <div class="sectioncontain">
@@ -54,6 +64,79 @@
           <button value="0" class="btn">0</button>
           <button value="." class="btn Dot">.</button>
           <button value="=" class="btn opreation Equal">=</button>
+        </section>
+      </div>
+    </form>
+
+    <form class="calculator2 hidden">
+      <!--Upper Type section-->
+      <div class="uppersection2">
+        <div class="type2 standard2">
+          <span>Standard </span>
+        </div>
+        <div class="type2 currency2 active--type2">
+          <span>Currency</span>
+        </div>
+      </div>
+
+      <div class="currencyconverter">
+        <div class="from">
+          <select name="from" id="from">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+          </select>
+
+          <input type="text" class="frominput" />
+        </div>
+
+        <div class="to">
+          <select name="to" id="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <input type="text" class="toinput currencyinput" />
+        </div>
+
+        <button class="convert">Convert</button>
+      </div>
+
+      <div class="sectioncontain2">
+        <!--Section1 -->
+
+        <!--Section2 -->
+
+        <section class="section2 section--22">
+          <button value="7" class="btn2">7</button>
+          <button value="8" class="btn2">8</button>
+          <button value="9" class="btn2">9</button>
+          <button value="C" class="btn2 opreation2 cross2">C</button>
+        </section>
+
+        <!--Section3 -->
+
+        <section class="section2 section--32">
+          <button value="4" class="btn2">4</button>
+          <button value="5" class="btn2">5</button>
+          <button value="6" class="btn2">6</button>
+          <button value="CE" class="btn2 opreation2 CE">CE</button>
+        </section>
+
+        <!--Section4 -->
+
+        <section class="section2 section--42">
+          <button value="1" class="btn2">1</button>
+          <button value="2" class="btn2">2</button>
+          <button value="3" class="btn2">3</button>
+        </section>
+
+        <!--Section5 -->
+
+        <section class="section2 section--52">
+          <button value="00" class="btn2 Double02">00</button>
+          <button value="0" class="btn2">0</button>
+          <button value="." class="btn2 Dot2">.</button>
         </section>
       </div>
     </form>
